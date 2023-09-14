@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+.hero {
+  --flow-spacer: 1.31rem;
+  padding-block: $padding-hero-block-small;
+
+  &__main {
+    align-self: center;
+    text-align: center;
+
+    @include mq(medium) {
+      text-align: left;
+    }
+  }
+
+  .flex-group {
+    margin-inline: auto;
+    justify-content: center;
+    @include mq("medium") {
+      margin-inline: revert;
+    }
+  }
+}

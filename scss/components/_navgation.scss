@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+.primary-navigation {
+  &__list {
+    --flex-column-gap: #{$size-9};
+    list-style: none;
+    justify-content: $navigation-justification;
+    a {
+      text-decoration: none;
+      text-transform: $navigation-text-transform;
+      font-family: $navigation-font-family;
+      font-size: $navigation-font-size;
+      font-weight: $navigation-font-weight;
+      color: $navigation-color;
+
+      &:is(:hover, :focus) {
+        color: $navigation-color-hover;
+      }
+    }
+  }
+}

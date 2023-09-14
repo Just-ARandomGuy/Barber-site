@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+.schedule-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $size-10;
+
+  li {
+    position: relative;
+    &:before, &:after {
+      content: "";
+      top:25%;
+      bottom: 25%;
+      position: absolute;
+      width: 1px;
+      background-color: $color-text-default;
+    }
+    &:before{
+      left: calc(($size-10 / -2) - 1px);
+    }
+    &:after{
+      right: ($size-10 / -2);
+    }
+  }
+
+}
+
+.service-list{
+  li{
+    display: flex;
+
+    > *{
+      flex-grow: 1;
+    }
+  }
+}
+
+.pricing-list{
+  --grid-gap: 3.75rem;
+}

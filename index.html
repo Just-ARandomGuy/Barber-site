@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/scss/main.scss" />
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="primary-header__layout">
+          <img class="logo" src="assets/logo.svg" alt="logo" />
+          <nav class="primary-navigation">
+            <ul class="primary-navigation__list flex-group">
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#hours">Hours</a></li>
+              <li><a href="#prices">Prices</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="even-columns" style="--grid-gap: 3rem">
+            <div class="hero__main flow">
+              <header>
+                <h1 class="heading-1">The barber shop</h1>
+              </header>
+              <p class="fs-600">
+                Established over a decade ago,
+                <span class="fw-bold">The Barber Shop</span> is here to serve
+                you're hair needs, whatever they are. From a simple cut, a beard
+                trim or a hot towel shave, we're here to help you with.
+              </p>
+              <div class="flex-group">
+                <a href="#" class="button" data-type="accent"
+                  >Book appointment</a
+                >
+                <a href="#" class="button" data-type="primary">View prices</a>
+              </div>
+            </div>
+            <img class="mx-auto" src="assets/hair-cut.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="section bg-primary-200 text-center">
+        <div class="container">
+          <header class="margin-block-end-">
+            <h2 class="heading-2">Our Services</h2>
+          </header>
+          <ul
+            class="service-list grid-auto-fit margin-block-15"
+            role="list"
+            style="--children-width: 20rem"
+          >
+            <li>
+              <article class="card">
+                <h3 class="card__heading">Hair Cutting</h3>
+                <p>
+                  A quick clean up or a totally new style, we have you covered.
+                </p>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <h3 class="card__heading">Hot shaves</h3>
+                <p>
+                  There is no better way to pamper yourself than to have a hot
+                  shave.
+                </p>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <h3 class="card__heading">Beard cleanup</h3>
+                <p>
+                  Our barbers are expects when it comes to working on beards.
+                </p>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <h3 class="card__heading">Hair coloring</h3>
+                <p>Expert color work to help you keep looking your best.</p>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <h3 class="card__heading">Kids</h3>
+                <p>
+                  Bring your kids with you while your at it, we love working
+                  them them too! lorem
+                </p>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <h3 class="card__heading">Products</h3>
+                <p>We carry a wide range of hair and beard products.</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section text-center">
+        <div class="container" data-type="full-bleed">
+          <header class="flow">
+            <h2 class="heading-2">hours</h2>
+            <p class="fs-600">
+              Open 7 days a week to serve your hair cutting needs
+            </p>
+          </header>
+          <ul class="schedule-list margin-block-start-14" role="list">
+            <li>
+              <div>
+                <h3 class="heading-3">Mon</h3>
+                <time datetime="9-18">9:00 - 18:00</time>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="heading-3">Tue</h3>
+                <time datetime="9-18">9:00 - 18:00</time>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="heading-3">Wed</h3>
+                <time datetime="9-18">9:00 - 18:00</time>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="heading-3">Thu</h3>
+                <time datetime="9-18">9:00 - 18:00</time>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="heading-3">Fri</h3>
+                <time datetime="9-21">9:00 - 21:00</time>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="heading-3">Sat</h3>
+                <time datetime="10-21">10:00 - 21:00</time>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="heading-3">Sun</h3>
+                <time datetime="10-18">10:00 - 18:00</time>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section text-center">
+        <div class="container" data-type="narrow">
+          <header class="margin-block-end-20">
+            <h2 class="heading-2">Pricing</h2>
+          </header>
+          <ul class="pricing-list grid-auto-fit" role="list">
+            <li>
+              <div>
+                <h3 class="heading-3">Adult cut</h3>
+                <p class="ff-accent fw-bold fs-600">$25</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="heading-3">Beard trim</h3>
+                <p class="ff-accent fw-bold fs-600">$25</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="heading-3">kid cut</h3>
+                <p class="ff-accent fw-bold fs-600">$21</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="heading-3">How Towel shave</h3>
+                <p class="ff-accent fw-bold fs-600">$15</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="heading-3">Cut & wash</h3>
+                <p class="ff-accent fw-bold fs-600">$35</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3 class="heading-3">head & beard</h3>
+                <p class="ff-accent fw-bold fs-600">$45</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container" data-type="narrow">
+          <header class="flow margin-block-end-15 text-center">
+            <h2 class="heading-2">Book an appointment</h2>
+            <p class="fs-600">Please fill out the form below to book your appointment</p>
+          </header>
+          <form action="" method="get" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input id="name" type="text" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail address</label>
+              <input type="email" placeholder="johnny1999@gmail.com" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input id="date" type="date" required>
+            </div>
+            <div class="form-group">
+              <label for="phone-number">Phone number</label>
+              <input type="tel" id="phone-number" required>
+            </div>
+            <div class="form-group">
+              <label for="service">Select service</label>
+              <input id="service" type="text" required>
+            </div>
+            <div class="form-group">
+              <label for="barber">Barber's name <span class="fw-regular">(optional)</span></label>
+              <input id="barber" type="text">
+            </div>
+            <button class="button" data-type="accent">Book appointment</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center padding-8 bg-primary-800 fw-bold clr-primary-300">
+      <div class="container flow">
+        <img src="assets/logo.svg" alt="" class="mx-auto">
+        <p>Here to serve your hair needs, whatever they might be</p>
+        <p class="ff-accent">514-555-1234</p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+@use "sass:meta";
+@use "sass:math";
+@use "sass:map";
+@use "breakpoints" as *;
+@use "token" as *;
+
+@mixin mq($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media screen and (min-width: map.get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else if meta.type-of($breakpoint) == number {
+    @if math.unit($breakpoint) != "" {
+      @media screen and (min-width: $breakpoint) {
+        @content;
+      }
+    } @else {
+      @error "The value is not a unit with a number";
+    }
+  } @else {
+    @error "The value is not in the map, or a unit with a number";
+  }
+}
+
+@mixin heading($fs, $color: $heading-color-default) {
+  font-size: $fs;
+  color: $color;
+
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  text-transform: $heading-text-transform;
+  letter-spacing: $heading-letter-spacing;
+  line-height: $heading-line-height;
+}

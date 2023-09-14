@@ -1,0 +1,24 @@
+{
+  "name": "website-starter-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "browserslist": [
+    ">.25%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "devDependencies": {
+    "postcss-preset-env": "^9.1.3",
+    "prettier": "^3.0.2",
+    "sass": "^1.66.1",
+    "vite": "^4.4.5",
+    "vite-plugin-html-purgecss": "^0.1.1",
+    "vite-plugin-purgecss": "^0.2.12"
+  }
+}

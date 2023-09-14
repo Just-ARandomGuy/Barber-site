@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+.text-center {
+  text-align: center;
+}
+
+.text-center-small {
+  text-align: center;
+
+  @include mq("medium") {
+    text-align: left;
+  }
+}

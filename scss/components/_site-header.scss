@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+.primary-header {
+  padding: $primary-header-padding;
+  margin: $primary-header-margin;
+  background-color: $primary-header-background-color;
+  color: $primary-header-color;
+
+  &__layout {
+    display: flex;
+    gap: $size-4;
+    flex-direction: column;
+    align-items: $primary-header-alignment;
+
+    @include mq(medium) {
+      flex-direction: row;
+      justify-content: $primary-header-justification;
+    }
+  }
+}
